@@ -133,17 +133,6 @@ table {
   border-spacing: 0;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -155,16 +144,38 @@ html {
   font-size: 62.5%;
 }
 
-p.desc {
-  font-size: 1.6rem;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+header p {
+  font-size: 1.2em;
+  margin: 0;
 }
 
-#hot-sales h2 {
-  color: green;
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
 }
-
-#banner h1 {
-  color: red;
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 section#products {
@@ -215,4 +226,4 @@ section#hot-sales h2 {
 }
 section#hot-sales .desc {
   margin-bottom: 20px;
-}/*# sourceMappingURL=index.css.map */
+}
