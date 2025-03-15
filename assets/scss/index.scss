@@ -1,0 +1,17 @@
+// base
+@import "./base/reset";
+@import "./base/normalize";
+@import "./base/base";
+@import "./base/variables";
+
+// vendor
+
+// components
+@import "./components/hotSales";
+@import "./components/banner";
+
+// pages
+@import "./pages/index";
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/cart";
