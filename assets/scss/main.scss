@@ -1,24 +1,20 @@
-// 1. Abstracts - Chứa các biến, mixins và functions
+// 1. Abstracts - Chứa các biến, mixins, functions
 @import "abstracts/functions";
-@import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
-// 2. Vendors - Các thư viện bên ngoài
-@import "vendors/normalize";
-@import "vendors/bootstrap";
-
-// 3. Base - Các quy tắc CSS cơ bản
+// 2. Base - Định nghĩa các thiết lập chung cho trang web
 @import "base/reset";
 @import "base/global";
 @import "base/typography";
 
-// 4. Layout - Định nghĩa bố cục chung
+// 3. Layout - Định nghĩa các thành phần bố cục chính
 @import "layout/grid";
 @import "layout/header";
 @import "layout/sidebar";
 @import "layout/footer";
 
-// 5. Components - Các thành phần tái sử dụng
+// 4. Components - Các thành phần nhỏ có thể tái sử dụng
 @import "components/breadcrumbs";
 @import "components/breadcrumbsMini";
 @import "components/button";
@@ -32,14 +28,18 @@
 @import "components/productList";
 @import "components/services";
 
-// 6. Pages - SCSS riêng cho từng trang
+// 5. Pages - Các trang cụ thể
+@import "pages/home";
 @import "pages/about";
 @import "pages/cart";
 @import "pages/comparison";
 @import "pages/contact";
-@import "pages/home";
 @import "pages/order";
 @import "pages/productDetail";
 
-// 7. Themes - Chủ đề giao diện
+// 6. Themes - Chủ đề màu sắc
 @import "themes/dark";
+
+// 7. Vendors - Thư viện bên thứ ba
+@import "vendors/normalize";
+@import "vendors/bootstrap";
